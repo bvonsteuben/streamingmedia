@@ -2,109 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MuzakMaker</title>
+    <link href="styles.css" rel="stylesheet">
+    <title>MuzakMaker- Smooth Jazz</title>
 </head>
-<header>
-    <h1>MuzakMaker</h1>
-    <h2>Smooth Jazz</h2>
-    <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
-    <nav>
-        <h2>MuzakMaker</h2>
-        <ul>
-            <li>Trending Songs</li>
-            <li>Your playlists</li>
-            <li>Curated Playlists</li>
-            <li>duke-silver.png</li>
-        </ul>   
-    </nav>
-</header>
-<main>
-    <section>
-        <h3>Trending Songs</h3>
-        <section>
-            <h4>Aloma</h4>
-            <p>Artist Cali</p>
-            <img src="aloma-cover.png" alt="dove">
-            aloma.mp3
-        </section>
-
-        My Road
-        Artist Nesterouk
-        my-road-cover.png
-        my-road.mp3
-
-        Papaya
-        Artist Dredstudio
-        papaya-cover.png
-        papaya.mp3
-
-        Smoothies
-        Artist Black Rhomb
-        smoothies-cover.png
-        smoothies.mp3
-
-        Successful Performance
-        Artist Ricky Bombino
-        successful-performance-cover.png
-        successful-performance.mp3
-
-        More trending
-    </section>
-    <section>
-        Your Playlists
-        best-of-2020-cover.png
-        Best of 2020
-        The music that got you through the lock down.
-
-
-        pumpkin-spice-cover.png
-        Pumpkin Spice
-        Creamy and spicy, just like your favorite autumnal latte.
-
-
-        quiet-storm-cover.png
-        Quiet Storm
-        Slow tempos and relaxed rhythms. 
-
-
-        smooth-jazz-cover.png
-        Smooth Jazz
-        The pioneers of smooth jazz
-
-
-        smooth-study-cover.png
-        Smooth Study
-        Background music to keep you going while you study. 
-
-
-        All your playlists
-    </section>
-    <section>
-        Curated Playlists
-        boozy-brunch-cover.png
-        Boozy Brunch
-        Light up the afternoon with these energetic hits. 
-
-        dinner-party-cover.png
-        Dinner Party
-        Background music to give your party life, but allow your guests to chat. 
-
-        mellow-cover.png
-        Mellow
-        Relax after a stressful day with this collection of extra smooth jazz.
-
-        jazz-chill-cover.png
-        Jazz and Chill
-        Set the mood with these silky sounds.
-
-        smooth-saxophone-cover.png
-        Jazz Saxophone
-        The greatest collection of your sax favorites.
-
-        More curated
-    </section>
-</main>
-
-Copyright 2022 Smooth Jazz
-</html>
+<body>
+    <div class="intro">
+      <header>
+          <h1>Smooth Jazz</h1>
+          <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+      </header>
+      <nav>
+          <h2>Main Navigation</h2>
+          <input type="checkbox" id="dropdown" />
+          <label for="dropdown"><span></span></label>
+          <ul>
+              <li id="wordmark"><a href="#home">MuzakMaker</a></li>
+              <li><a href="#trending">Trending <br />Songs</a></li>
+              <li><a href="#playlists">Your  <br />Playlists</a></li>
+              <li><a href="#curated">Curated  <br />Playlists</a></li>
+              <li><a href="user"><img src="images/duke-silver.png" alt="user profile picture"></a></li>
+          </ul>
+      </nav>
+    </div>
+      <main>
+          <section id="trending">
+              <h2>Trending Songs</h2>
+              <div class="scroll">
+                  <section>
+                      <div>
+                          <h3>Aloma</h3>
+                          <dl>
+                              <dt>Artist</dt> 
+                              <dd>Cali</dd>
+                          </dl>
+                      </div>
+                      <img src="https://assets.codepen.io/9981709/aloma-cover.png" alt="white dove flying on black background">
+                      <audio
+                          controls
+                          src="audio/aloma.mp3">
+                          Your browser does not support the <code>audio</code> element.
+                      </audio>
+                  </section>
+                  <section> 
+                      <div>   
+                          <h3>My Road</h3>
+                          <dl>
+                              <dt>Artist</dt> 
+                              <dd>Nesterouk</dd>
+                          </dl>
+                      </div>
+                      <img src="https://assets.codepen.io/9981709/my-road-cover.png" alt="desert road leading to mountain and blue sky" />
+                      <audio 
+                          controls
+                          src="audio/my-road.mp3">
+                          Your browser does not support the <code>audio</code> element.
+                      </audio>
+                  </section>
+                  <section>
+                      <div>
+                          <h3>Papaya</h3>
+                          <dl>
+                              <dt>Artist</dt> 
+                              <dd>Dredstudio</dd>
+                          </dl>
+                      </div>
+                      <img src="https://assets.codepen.io/9981709/papaya-cover.png" alt="half of a papaya against a green background" />
+                      <audio 
+                          controls
+                          src="audio/papaya.mp3">
+                          Your browser does not support the <code>audio</code> element.
+                      </audio>
+                  </section>
+                  <section>
+                      <div>
+                          <h3>Smoothies</h3>
+                          <dl>
+                              <dt>Artist</dt> 
+                              <dd>Black Rhomb</dd>
+                          </dl>
+                      </div>
+                      <img src="https://assets.codepen.io/9981709/smoothies-cover.png" alt="fruit around a smoothie">
+                      <audio 
+                          controls
+                          src="audio/smoothies.mp3">
+                          Your browser does not support the <code>audio</code> element.
+                      </audio>
+                  </section>
+                  <section>
+                      <div>
+                          <h3>Successful Performance</h3>
+                          <dl>
+                              <dt>Artist</dt> 
+                              <dd>Ricky Bombino</dd>
+                          </dl>
+                      </div>
+                      <img src="https://assets.codepen.io/9981709/successful-performance-cover.png" alt="guy with fists up for success">
+                      <audio  
+                          controls
+                          src="audio/successful-performance.mp3">
+                          Your browser does not support the <code>audio</code> element.
+                      </audio>
+                  </section>
+              </div>
+              <p class="button">More trending</p>
+          </section>
+        <div class=playlists>
+          <section id="yourPlaylists">
+              <h2>Your Playlists</h2>
+              <div class=scroll>
+                  <section>   
+                      <img src="https://assets.codepen.io/9981709/best-of-2020-cover.png" alt="2020 in flames"/>
+                      <h3>Best of 2020</h3>
+                      <p>The music that got you through the lock down.</p>
+                  </section> 
+                  <section>
+                      <img src="https://assets.codepen.io/9981709/pumpkin-spice-cover.png" alt="coffee in cup"/>
+                      <h3>Pumpkin Spice</h3>
+                      <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                  </section>
+                  <section>
+                      <img src="https://assets.codepen.io/9981709/quiet-storm-cover.png" alt="storm clouds with lightning bolt"/>
+                      <h3>Quiet Storm</h3>
+                      <p>Slow tempos and relaxed rhythms.</p> 
+                  </section>
+                  <section>
+                      <img src="https://assets.codepen.io/9981709/smooth-jazz-cover.png" alt="guy in a green shirt"/>
+                      <h3>Smooth Jazz</h3>
+                      <p>The pioneers of smooth jazz</p>
+                  </section>
+                  <section>
+                      <img src="https://assets.codepen.io/9981709/smooth-study-cover.png" alt="hands on a laptop keyboard"/>
+                      <h3>Smooth Study</h3>
+                      <p>Background music to keep you going while you study.</p> 
+                  </section>
+              </div>
+              <p class="button">All your playlists</p>
+          </section>
+          <section id="curatedPlaylists">
+              <h2>Curated Playlists</h2>
+              <div class="scroll">
+                  <section>
+                      <img src="https://assets.codepen.io/9981709/boozy-brunch-cover.png" alt="6 hands cheers"/>
+                      <h3>Boozy Brunch</h3>
+                      <p>Light up the afternoon with these energetic hits.</p>
+                  </section>
+                  <section>
+                      <img src="https://assets.codepen.io/9981709/dinner-party-cover.png" alt="table decorated with flowers food and candles"/>
+                      <h3>Dinner Party</h3>
+                      <p>Background music to give your party life, but allow your guests to chat.</p> 
+                  </section>
+                  <section>
+                      <img src="https://assets.codepen.io/9981709/mellow-cover.png" alt="two people sit on a park bench in the fall"/>
+                      <h3>Mellow</h3>
+                      <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
+                  </section>
+                  <section>
+                      <img src="https://assets.codepen.io/9981709/jazz-chill-cover.png" alt="red rose petals"/>
+                      <h3>Jazz and Chill</h3>
+                      <p>Set the mood with these silky sounds.</p>
+                  </section>
+                  <section>
+                      <img src="https://assets.codepen.io/9981709/smooth-saxophone-cover.png" alt="saxophone close up with musicians in background"/>
+                      <h3>Jazz Saxophone</h3>
+                      <p>The greatest collection of your sax favorites.<p>
+                  </section>
+              </div>
+              <p class="button">More curated</p>
+          </section>
+        </div>
+      </main>
+      <footer>
+          <p><small>Copyright 2022 Smooth Jazz</small></p>
+      </footer>
+  
