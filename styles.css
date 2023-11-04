@@ -77,9 +77,95 @@ header {
 }
 
 nav {
-  background: linear-gradient(180deg, #000000, #020659, #020873, #030a8c, #2104d9);
+  width: 375px;
+  background-color: #030A8C;
   position: absolute;
+  top: 0;
   z-index:1;
+  text-transform: uppercase;
+}
+nav ul {
+  text-align: center;
+}
+nav h2 {
+  visibility: hidden;
+  height: 1px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #2104D9;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+[href="#home"] {
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  left: 90px;
+  padding: 16px 16px;
+}
+a:hover, input:hover {
+  background-color: #590242;
+}
+label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+label span {
+  background-color: #ffffff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background-color .2s ease-out;
+  width: 18px;
+}
+label span:before, label span:after {
+  background: #ffffff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+label span:before {
+  top: 5px;
+}
+label span:after {
+  top: -5px;
+}
+input {
+  display: none;
+}
+input:checked ~ ul {
+  max-height: 500px;
+}
+input:checked ~ label span {
+  background: transparent;
+}
+input:checked ~ label span:before {
+  transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+  transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+  top: 0;
 }
 
 
@@ -94,60 +180,7 @@ nav {
  margin: 10px 0 30px 32px;
 }
 
-/* menu text from resources */
-ul {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-label {
-    cursor: pointer;
-    display: inline-block;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-}
-label span {
-    background-color: #ffffff;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background-color .2s ease-out;
-    width: 18px;
-}
-label span:before, label span:after {
-    background: #ffffff;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-label span:before {
-    top: 5px;
-}
-label span:after {
-    top: -5px;
-}
-input {
-    display: none;
-}
-input:checked ~ ul {
-    max-height: 500px;
-}
-input:checked ~ label span {
-    background: transparent;
-}
-input:checked ~ label span:before {
-    transform: rotate(-45deg);
-}
-input:checked ~ label span:after {
-    transform: rotate(45deg);
-}
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-    top: 0;
-}
+/
 
 /*scroll bar styling from youtube video*/
 #trending .scroll ::-webkit-scrollbar {
@@ -337,25 +370,12 @@ header, footer {
     
 .playlists {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2,first);
+  grid-gap:  10px;
   
 }
-#yourPlaylists .scroll{
-  display: grid;
-  overflow-x: hidden;
-  overflow-y: auto;
+.scroll {
+  max-height: 150px
+  overflow-x: auto;
 }
 
-#yourPlaylists .scroll section {
-  margin: 10px;
-  padding: 10px;
-  position: relative;
-  background: #0d8dfb;
-}
-#yourPlaylists .scroll div {
-  position: absolute;
-  padding: 5px;
-  height: 50px;
-  width: 350px;
-}
