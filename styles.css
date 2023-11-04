@@ -193,10 +193,10 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
   background: #590242;
   border-radius: 5px;
 }
-#trending .scoll::-webkit-scrollbar-thumb:hover {
+#trending .scroll::-webkit-scrollbar-thumb:hover {
   background: #020659;
 }
-#trending .scoll s::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+#trending .scroll ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
   width: 15px;
 }
 #trending .scroll ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
